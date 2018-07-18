@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "cryptofont/rails/version"
+require "cryptofont-rails/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "cryptofont-rails"

@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "cryptofont/rails"
+require "cryptofont-rails"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
