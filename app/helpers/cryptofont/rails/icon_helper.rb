@@ -20,7 +20,7 @@ module Cryptofont
       #
       #   content_tag(:li, cf_icon("ltc li", text: "Bulleted list item"))
       #   # => <li><i class="cf-ltc fa-li"></i> Bulleted list item</li>
-      def ion_icon(names = 'flag', options = {})
+      def cf_icon(names = 'flag', options = {})
         classes = []
         classes.concat Private.icon_names(names)
         classes.concat Array(options.delete(:class))
