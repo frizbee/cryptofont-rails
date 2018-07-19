@@ -62,7 +62,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/frizbe
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+* The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 * The font is licensed under the SIL OFL 1.1 http://scripts.sil.org/OFL
 * The CSS files are licensed under the MIT License http://opensource.org/licenses/mit-license.htm
 * Attribution is not required, but much appreciated CryptoFont by @AMPoellmann (alexanderpoellmann.com)
