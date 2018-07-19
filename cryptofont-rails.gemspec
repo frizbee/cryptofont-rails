@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A sleek webfont for your favourite cryptocurrencies. Featuring 88 icons.}
   spec.description   = %q{CryptoFont by @AMPoellmann (alexanderpoellmann.com)}
-  spec.homepage      = "https://cryptofont.com/"
+  spec.homepage      = "https://github.com/frizbee/cryptofont-rails"
   spec.license       = "MIT"
 
 

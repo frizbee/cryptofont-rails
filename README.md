@@ -1,8 +1,6 @@
-# Cryptofont::Rails
+# cryptofont-rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cryptofont/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Cryptofont-rails provides the [Cryptofont](https://cryptofont.com/) web fonts and styles as Rails engine for use with the asset pipeline.
 
 ## Installation
 
@@ -22,13 +20,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your `application.css`, include the css file:
+```
+/*
+ * require cryptofont
+ */
+```
+Then restart your webserver if it was peviously running.
+Congratulation! You now have cryptofont icon support.
 
-## Development
+### SASS Support
+It you prefer SCSS, add this to your `application.css.scss` file:
+```
+@import "cryptofont"
+```
+If you use the SASS indented syntax, add this to your `application.css.sass` file:
+```
+@import cryptofont
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## Helpers
+There are also some helpers `cf_icon` that make your views better read and cleaner.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+cf_icon "btc"
+# => <i class="cf-btc"></i>
+
+cf_icon "ltc", text: "Litecoin"
+# => <i class="cf-litecoin"></i> Litecoin
+
+cf_icon "eth", text: "Ethereum", right: true
+# => Ethereum <i class="cf-eth"></i>
+
+cf_icon "dash 4x", text: "Dash"
+# => <i class="cf-dash cf-4x"></i>
+```
 
 ## Contributing
 
