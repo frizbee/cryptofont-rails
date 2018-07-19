@@ -32,7 +32,7 @@ Congratulation! You now have cryptofont icon support.
 ### SASS Support
 It you prefer SCSS, add this to your `application.css.scss` file:
 ```
-@import "cryptofont"
+@import "cryptofont";
 ```
 If you use the SASS indented syntax, add this to your `application.css.sass` file:
 ```
