@@ -1,25 +1,20 @@
 module Cryptofont
   module Rails
     module IconHelper
-      # Creates an icon tag given an icon name and possible icon
-      # modifiers.
-      #
       # Examples
       #
       #   cf_icon "btc"
       #   # => <i class="cf-btc"></i>
       #
-      #   cf_icon "btc", text: "Bitcoin"
-      #   # => <i class="cf-btc"></i> Bitcoin
+      #   cf_icon "ltc", text: "Litecoin"
+      #   # => <i class="cf-litecoin"></i> Litecoin
       #
-      #   cf_icon "btc-right", text: "Bitcoin", right: true
-      #   # => Bitcoin <i class="cf-btc-right"></i>
+      #   cf_icon "eth", text: "Ethereum", right: true
+      #   # => Ethereum <i class="cf-eth"></i>
       #
-      #   cf_icon "btc", data: { id: 123 }
-      #   # => <i class="cf-btc" data-id="123"></i>
+      #   cf_icon "dash 4x", text: "Dash"
+      #   # => <i class="cf-dash cf-4x"></i>
       #
-      #   content_tag(:li, cf_icon("ltc li", text: "Bulleted list item"))
-      #   # => <li><i class="cf-ltc fa-li"></i> Bulleted list item</li>
       def cf_icon(names = 'flag', options = {})
         classes = []
         classes.concat Private.icon_names(names)
